@@ -64,7 +64,7 @@ def sentence(data_table):
     #print ('\n''I like to watch', data_table['movies'], 'movies')
     
 def favoutite_movies(data_table):
-    print('\n''Some of my favourite movies are')
+    print('\n''Some of my favourite movies are:')
     for m in data_table['movies']:
         print(m)
     
