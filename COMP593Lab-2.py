@@ -24,12 +24,12 @@ def main():
     
     print_student_name_and_id(about_me)
     
-    #Add another movie to the list of movies using the .append method
+#Step 3 - Add another movie to the list of movies using the .append method
     new_movie = {'movie3': 'The Hunger Games', 'title': 'The Hunger Games', 'genre': 'Suspenseful Thriller'}
     about_me['movies'].append(new_movie)  
     return
     
-# TODO: Step 4 - Function that prints student name and ID	
+#Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
     student_name = ('My name is ') + about_me['full_name'] + (' but you can call me Mr. ') + about_me['full_name'][5]
     print(student_name)
@@ -39,12 +39,17 @@ def print_student_name_and_id(about_me):
     return
     
     
-
-
    
 # TODO: Step 5 - Function that adds pizza toppings to data structure
-#def add_pizza_toppings(about_me, toppings):
- #   return
+def add_pizza_toppings(about_me, toppings):
+    
+    
+    
+    return
+
+
+
+
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 #def print_pizza_toppings(about_me):
