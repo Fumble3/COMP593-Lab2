@@ -15,11 +15,10 @@ def main():
             {'title': 'Deadpool',
             'genre': 'Comedy',
             }
-        ]
+        ]             
 }
-
     sentence(data_table)
-    
+
 
    
 # Add one more movie to the list    
@@ -29,24 +28,26 @@ def main():
 #Adding toppings to the list and sorting them
 def add_toppings(data_table, new_toppings):
     
-    new_toppings = ('Olives', 'Chicken', 'Onion')
+    new_toppings = ('Chicken', 'Onion')
     data_table['pizza_toppings'].append(new_toppings)
     
-    sort_toppings = sorted(data_table['pizza_toppings']())
+    sort_toppings = sorted(data_table['pizza_toppings'])
     print(sort_toppings)
+      
 
 def sentence(data_table):
     
     print("My name is", data_table['name'],"but you can call me Mr.", data_table['name'][5])
     print("My student ID is", data_table['student_id'])
-    print('My favourite pizza toppings are: ')
+    
+    #List of favourite pizza toppings
+    print('\n''My favourite pizza toppings are: ')
     
     for d in data_table['pizza_toppings']:
         print(d)
 
-    print ('I like to watch', data_table['movies'],'movies.')
-   
-  
-
+    print ('\n''I like to watch', data_table['movies'][1],'movies.')
+    
+    
 if __name__ == '__main__':
     main()
