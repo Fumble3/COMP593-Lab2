@@ -57,10 +57,17 @@ def sentence(data_table):
     data_table['movies'].append(new_movie)
     
     movie_genre = data_table['movies']
-    print (movie_genre)
+    print('\n','I like to watch', movie_genre)
+    favoutite_movies(data_table)
     
     
     #print ('\n''I like to watch', data_table['movies'], 'movies')
+    
+def favoutite_movies(data_table):
+    print('\n''Some of my favourite movies are')
+    for m in data_table['movies']:
+        print(m)
+    
     
     
 if __name__ == '__main__':
